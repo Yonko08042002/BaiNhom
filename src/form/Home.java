@@ -70,6 +70,7 @@ public class Home extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
@@ -405,28 +406,37 @@ public class Home extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search_18px.png"))); // NOI18N
 
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Logout_w_30px.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(653, Short.MAX_VALUE)
+                .addContainerGap(665, Short.MAX_VALUE)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel5)
-                .addGap(82, 82, 82))
+                .addGap(50, 50, 50)
+                .addComponent(jLabel32)
+                .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel5)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(12, 12, 12)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 960, 50));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 980, 50));
 
         jPanel5.setBackground(new java.awt.Color(71, 120, 197));
 
@@ -530,7 +540,7 @@ public class Home extends javax.swing.JFrame {
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(0, 0, 204));
-        jLabel23.setText("Mã Sinh Viên:");
+        jLabel23.setText("Mã Nhân Viên");
 
         jTextField_msv.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jTextField_msv.setForeground(new java.awt.Color(0, 0, 204));
@@ -548,7 +558,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jTextField_msv, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -558,10 +568,10 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jLabel23)
                     .addComponent(jTextField_msv, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        formtrangchu.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, -1));
+        formtrangchu.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, -1));
 
         bangsv.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         bangsv.setModel(new javax.swing.table.DefaultTableModel(
@@ -587,7 +597,7 @@ public class Home extends javax.swing.JFrame {
         bangsv.setRowHeight(22);
         jScrollPane1.setViewportView(bangsv);
 
-        formtrangchu.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 630, 330));
+        formtrangchu.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 630, 330));
 
         jButton1.setBackground(new java.awt.Color(23, 35, 51));
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -598,9 +608,9 @@ public class Home extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        formtrangchu.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 460, 100, 30));
+        formtrangchu.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 460, 100, 30));
 
-        getContentPane().add(formtrangchu, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, 650, 500));
+        getContentPane().add(formtrangchu, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, 680, 500));
 
         formcaidat.setBackground(new java.awt.Color(153, 255, 153));
 
@@ -913,6 +923,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
